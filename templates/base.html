@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylesheet.css') }}">
+</head>
+<body>
+    <div>
+        <h1>VERTICAL TANK MAINTENANCE</h1>
+        <hr>
+        <br>
+        <h2 class="responsive">
+            <a href="index">HOME</a>
+            <a href="about">ABOUT</a>
+            <a href="estimate">ESTIMATOR</a>
+
+        </h2>
+        {% block body %}
+
+        {% endblock %}
+
+    </div>
+</body>
+
+<footer>
+    VTM 2020
+</footer>
+</html>
